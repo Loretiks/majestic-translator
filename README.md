@@ -197,11 +197,4 @@ main.py              # Entry point: load config, pick region if needed, show
 
 MIT — see [LICENSE](LICENSE).
 
-## Acknowledgements
-
-- [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) for the East-Slavic recognition model.
-- [PySide6](https://wiki.qt.io/Qt_for_Python) for the frameless window plumbing.
-- [mss](https://github.com/BoboTiG/python-mss) for fast screen capture.
-- [Inno Setup](https://jrsoftware.org/isinfo.php) for installer packaging.
-
 Not affiliated with Majestic RP, Rockstar Games, or Take-Two Interactive. GTA V is a trademark of Rockstar Games.

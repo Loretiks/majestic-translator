@@ -197,11 +197,4 @@ main.py              # punkt wejścia: ładowanie konfigu, kalibracja jeśli trz
 
 MIT — patrz [LICENSE](LICENSE).
 
-## Podziękowania
-
-- [PaddleOCR](https://github.com/PaddlePaddle/PaddleOCR) za wschodniosłowiański model rozpoznawania.
-- [PySide6](https://wiki.qt.io/Qt_for_Python) za plumbing okna bez ramki.
-- [mss](https://github.com/BoboTiG/python-mss) za szybkie przechwytywanie ekranu.
-- [Inno Setup](https://jrsoftware.org/isinfo.php) za pakowanie instalatora.
-
 Niezależny od Majestic RP, Rockstar Games ani Take-Two Interactive. GTA V jest znakiem towarowym Rockstar Games.
