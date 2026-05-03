@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# PyInstaller transient artifacts (NOT the build/ scripts which are repo source)
+build/MajesticTranslator/
+build/__pycache__/
+dist/
+*.spec.bak
+
+# Inno Setup output
+installer/output/
+*.iss.bak
+
+# IDE / editors
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Runtime/user data
+config.json
+*.log
+.run_*.log
+.run_*.txt
+
+# Local debug/scratch files
+_*.py
+_*.png
+_overlay.png
+
+# PaddleOCR model cache (huge, downloaded on first run)
+.paddlex/
+*.pdmodel
+*.pdiparams
+
+# OS
+desktop.ini

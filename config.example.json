@@ -1,0 +1,14 @@
+{
+  "chat_region": null,
+  "ocr_interval_ms": 1000,
+  "overlay_pos": { "x": 40, "y": 40 },
+  "overlay_size": { "w": 460, "h": 520 },
+  "overlay_opacity": 0.94,
+  "source_lang": "ru",
+  "target_lang": "pl",
+  "input_lang": "pl",
+  "input_target_lang": "ru",
+  "mymemory_email": "",
+  "language": "ru",
+  "theme": "majestic"
+}
