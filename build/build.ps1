@@ -30,11 +30,13 @@ if (Test-Path $Out) {
 }
 
 # Optional: build the Inno Setup installer if ISCC is available.
-$ISCC = "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe"
-if (-not (Test-Path $ISCC)) {
-    $ISCC = "${env:ProgramFiles}\Inno Setup 6\ISCC.exe"
-}
-if (Test-Path $ISCC) {
+$ISCC_CANDIDATES = @(
+    "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe",
+    "${env:ProgramFiles}\Inno Setup 6\ISCC.exe",
+    "${env:LOCALAPPDATA}\Programs\Inno Setup 6\ISCC.exe"
+)
+$ISCC = $ISCC_CANDIDATES | Where-Object { Test-Path $_ } | Select-Object -First 1
+if ($ISCC) {
     Write-Host "==> Compiling installer with Inno Setup…" -ForegroundColor Cyan
     & $ISCC "$RepoRoot\installer\installer.iss"
     if ($LASTEXITCODE -eq 0) {
